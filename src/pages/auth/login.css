@@ -1,0 +1,45 @@
+#login-body-box {
+  width: 350px;
+  border: 1px solid #d9d9d9;
+  padding: 45px 25px 100px 25px;
+  box-shadow: 2px 5px 20px 5px lightgrey;
+}
+#signup-body-box {
+  width: 360px;
+  border: 1px solid #d9d9d9;
+  padding: 40px 25px;
+  box-shadow: 2px 5px 20px 5px lightgrey;
+}
+/* .css-binzgt {
+  margin-top: 35px;
+} */
+
+#container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animate-bounces {
+  animation: bounce 3s;
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    100% {
+      transform: translateY(205%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+    /* 50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    } */
+  }
+}
