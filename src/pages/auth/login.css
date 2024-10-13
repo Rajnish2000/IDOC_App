@@ -22,24 +22,19 @@
 }
 
 .animate-bounces {
-  animation: bounce 3s;
+  animation-duration: 2s;
+  animation-name: bounce;
+}
 
-  @keyframes bounce {
-    0% {
-      transform: translateY(-25%);
-      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-    }
-    100% {
-      transform: translateY(205%);
-      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-    }
-    50% {
-      transform: translateY(0);
-      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    }
-    /* 50% {
-      transform: translateY(0);
-      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    } */
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(35%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
 }
